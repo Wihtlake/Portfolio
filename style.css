@@ -100,8 +100,9 @@ a{
 }
 .heading {
 	background: url(img/Rectangle\ 2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
-	box-shadow: 0px 29px 83px 15px rgba(255, 255, 255, 0.17);
 	padding-top: 200px;
 }
 .heading_main{
