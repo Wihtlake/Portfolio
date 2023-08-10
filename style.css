@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Raleway;
+	scroll-behavior: smooth;
 }
 li{
 	list-style: none;
@@ -65,6 +66,17 @@ a{
 	font-size: 20px;
 	font-weight: 200;
 	text-decoration: none;
+	transition: .2s padding ease-in-out;
+
+}
+.side_menu a:hover{
+	padding: 10px 15px;
+	transition: .2s padding ease-in-out;
+	font-weight: 400;
+	color:	#3A3737 ;
+	border: 1px solid #3A3737;
+	background:	#fff ;
+
 }
 .side_menu li{
 	margin-bottom: 57px;
@@ -77,7 +89,13 @@ a{
 .side_links li{
 	margin-bottom: 25px;
 }
-
+.side_links img{
+	transition: .2s transform ease-in-out;
+}
+.side_links img:hover{
+	transform: scale(1.1);
+	transition: .2s transform ease-in-out;
+}
 .main {
 }
 .heading {
@@ -132,12 +150,19 @@ a{
 	height: 340px;
 	border-radius: 10px;
 	margin-bottom: 50px;
+	overflow: hidden;
 }
 .Portfolio_card img{
 	object-fit: cover;
 	border-radius: 10px;
 	width: 500px;
 	height: 340px;
+	transition: .2s transform ease-in-out, .2s filter ease-in-out;
+}
+.Portfolio_card img:hover{
+	transform: scale(1.05);
+	filter: brightness(1.05);
+	transition: .2s transform ease-in-out, .2s filter ease-in-out;
 }
 .portfolio_block{
 	display: flex;
@@ -147,7 +172,7 @@ a{
 .skills {
 	background: #3A3737;
 	color: #FFF;
-	padding-bottom: 500px;
+	padding-bottom: 200px;
 }
 .skills_main h2{
 	padding-top: 200px;
@@ -189,10 +214,9 @@ a{
 	background: #3A3737;
 }
 .contacts_main{
-	min-height: 100vh;
+	min-height: 50vh;
 }
 .contacts_main h2{
-	padding-top: 200px;
 	text-align: center;
 	color: #FFF;
 	font-size: 40px;
@@ -214,6 +238,11 @@ a{
 	border-radius: 10px;
 	width: 409px;
 	padding: 16px 22px;
+	transition: .2s box-shadow ease-in-out;
+}
+.contacts_card:hover{
+	box-shadow: 0px 0px 20px #ffffffa2;
+	transition: .2s box-shadow ease-in-out;
 }
 .contacts_img img{
 	width: 71px;
