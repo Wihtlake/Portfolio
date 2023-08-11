@@ -170,6 +170,19 @@ a{
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
+.marker h3{
+	width: 20%;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	margin: 80px auto;
+	padding: 10px 20px;
+	color: #3A3737;
+	background: #fff;
+	border-radius: 10px;
+}
+
 .skills {
 	background: #3A3737;
 	color: #FFF;
